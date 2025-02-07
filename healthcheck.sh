@@ -4,7 +4,7 @@
 # BROWSER
 
 
-echo "Checking if hub is ready - $HUB_HOST"
+echo "Checking if hub is ready to go - $HUB_HOST"
 
 while [ "$( curl -s http://$HUB_HOST:4444/status | jq -r .value.ready )" != "true" ]
 

@@ -32,7 +32,7 @@ services:
     shm_size: "2g"  # Increases shared memory for Firefox
 
   search-module:
-    image: charbelbs/selenium-docker
+    image: charbelbsaibess/selenium-docker
     depends_on:
       - chrome
       - firefox

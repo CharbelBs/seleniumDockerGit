@@ -2,32 +2,16 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-06T14:56:31 UTC" name="DockerSelenium" finished-at="2025-02-06T14:57:00 UTC" duration-ms="28383">
+  <suite started-at="2025-02-07T16:25:20 UTC" name="DockerSelenium" finished-at="2025-02-07T16:26:11 UTC" duration-ms="51860">
     <groups>
     </groups>
-    <test started-at="2025-02-06T14:56:31 UTC" name="GooglePageTest1" finished-at="2025-02-06T14:56:37 UTC" duration-ms="5183">
-      <class name="TestSuite.GoogleHomeTest">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:TestSuite.GoogleHomeTest@25d250c6]" started-at="2025-02-06T14:56:31 UTC" name="setUpDriver" finished-at="2025-02-06T14:56:36 UTC" duration-ms="4977" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpDriver -->
-        <test-method signature="searchTest()[pri:0, instance:TestSuite.GoogleHomeTest@25d250c6]" started-at="2025-02-06T14:56:36 UTC" name="searchTest" finished-at="2025-02-06T14:56:36 UTC" duration-ms="43" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestSuite.GoogleHomeTest@25d250c6]" started-at="2025-02-06T14:56:36 UTC" name="quitDriver" finished-at="2025-02-06T14:56:37 UTC" duration-ms="147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- TestSuite.GoogleHomeTest -->
-    </test> <!-- GooglePageTest1 -->
-    <test started-at="2025-02-06T14:56:31 UTC" name="GoogleSearchTest2" finished-at="2025-02-06T14:56:57 UTC" duration-ms="25472">
+    <test started-at="2025-02-07T16:25:20 UTC" name="GoogleSearchTest2" finished-at="2025-02-07T16:25:46 UTC" duration-ms="25927">
       <class name="TestSuite.GoogleResultTest">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:TestSuite.GoogleResultTest@78b66d36]" started-at="2025-02-06T14:56:31 UTC" name="setUpDriver" finished-at="2025-02-06T14:56:35 UTC" duration-ms="4006" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:TestSuite.GoogleResultTest@78b66d36]" started-at="2025-02-07T16:25:20 UTC" name="setUpDriver" finished-at="2025-02-07T16:25:23 UTC" duration-ms="3370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="searchPageTest(java.lang.String,int)[pri:0, instance:TestSuite.GoogleResultTest@78b66d36]" started-at="2025-02-06T14:56:35 UTC" name="searchPageTest" finished-at="2025-02-06T14:56:57 UTC" duration-ms="21334" status="FAIL">
+        <test-method signature="searchPageTest(java.lang.String,int)[pri:0, instance:TestSuite.GoogleResultTest@78b66d36]" started-at="2025-02-07T16:25:23 UTC" name="searchPageTest" finished-at="2025-02-07T16:25:45 UTC" duration-ms="22335" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -78,9 +62,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.26.0', revision: '8ccf0219d7'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.2'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [d2940db2a6d5e479b3e9499bcd858bef, findElement {using=link text, value=News}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37589}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.6:4444/sessio..., se:cdpVersion: 132.0.6834.110, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.6:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d2940db2a6d5e479b3e9499bcd858bef
+Command: [f93b65dd6e3f06dab25b6962f75d2326, findElement {using=link text, value=News}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33087}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.4:4444/sessio..., se:cdpVersion: 132.0.6834.110, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f93b65dd6e3f06dab25b6962f75d2326
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -110,19 +94,19 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchPageTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestSuite.GoogleResultTest@78b66d36]" started-at="2025-02-06T14:56:57 UTC" name="quitDriver" finished-at="2025-02-06T14:56:57 UTC" duration-ms="105" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestSuite.GoogleResultTest@78b66d36]" started-at="2025-02-07T16:25:45 UTC" name="quitDriver" finished-at="2025-02-07T16:25:46 UTC" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- TestSuite.GoogleResultTest -->
     </test> <!-- GoogleSearchTest2 -->
-    <test started-at="2025-02-06T14:56:31 UTC" name="GoogleSearchTest1" finished-at="2025-02-06T14:57:00 UTC" duration-ms="28383">
+    <test started-at="2025-02-07T16:25:20 UTC" name="GoogleSearchTest1" finished-at="2025-02-07T16:26:10 UTC" duration-ms="50093">
       <class name="TestSuite.GoogleResultTest">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:TestSuite.GoogleResultTest@10e92f8f]" started-at="2025-02-06T14:56:31 UTC" name="setUpDriver" finished-at="2025-02-06T14:56:37 UTC" duration-ms="5281" status="PASS">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:TestSuite.GoogleResultTest@10e92f8f]" started-at="2025-02-07T16:25:20 UTC" name="setUpDriver" finished-at="2025-02-07T16:25:47 UTC" duration-ms="27421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="searchPageTest(java.lang.String,int)[pri:0, instance:TestSuite.GoogleResultTest@10e92f8f]" started-at="2025-02-06T14:56:37 UTC" name="searchPageTest" finished-at="2025-02-06T14:57:00 UTC" duration-ms="22911" status="FAIL">
+        <test-method signature="searchPageTest(java.lang.String,int)[pri:0, instance:TestSuite.GoogleResultTest@10e92f8f]" started-at="2025-02-07T16:25:47 UTC" name="searchPageTest" finished-at="2025-02-07T16:26:10 UTC" duration-ms="22554" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -173,9 +157,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.26.0', revision: '8ccf0219d7'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.167.4-microsoft-standard-WSL2', java.version: '17.0.2'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [ed7e6b3674f73200a38b94e993ab5072, findElement {using=link text, value=News}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41239}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.4:4444/sessio..., se:cdpVersion: 132.0.6834.110, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed7e6b3674f73200a38b94e993ab5072
+Command: [105d4476a785ca70ff140babaed558bf, findElement {using=link text, value=News}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38707}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.4:4444/sessio..., se:cdpVersion: 132.0.6834.110, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 105d4476a785ca70ff140babaed558bf
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -205,11 +189,27 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchPageTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestSuite.GoogleResultTest@10e92f8f]" started-at="2025-02-06T14:57:00 UTC" name="quitDriver" finished-at="2025-02-06T14:57:00 UTC" duration-ms="177" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestSuite.GoogleResultTest@10e92f8f]" started-at="2025-02-07T16:26:10 UTC" name="quitDriver" finished-at="2025-02-07T16:26:10 UTC" duration-ms="101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- TestSuite.GoogleResultTest -->
     </test> <!-- GoogleSearchTest1 -->
+    <test started-at="2025-02-07T16:25:20 UTC" name="GooglePageTest1" finished-at="2025-02-07T16:26:11 UTC" duration-ms="51860">
+      <class name="TestSuite.GoogleHomeTest">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:TestSuite.GoogleHomeTest@25d250c6]" started-at="2025-02-07T16:25:20 UTC" name="setUpDriver" finished-at="2025-02-07T16:26:11 UTC" duration-ms="51680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="searchTest()[pri:0, instance:TestSuite.GoogleHomeTest@25d250c6]" started-at="2025-02-07T16:26:11 UTC" name="searchTest" finished-at="2025-02-07T16:26:11 UTC" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:TestSuite.GoogleHomeTest@25d250c6]" started-at="2025-02-07T16:26:11 UTC" name="quitDriver" finished-at="2025-02-07T16:26:11 UTC" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- TestSuite.GoogleHomeTest -->
+    </test> <!-- GooglePageTest1 -->
   </suite> <!-- DockerSelenium -->
 </testng-results>

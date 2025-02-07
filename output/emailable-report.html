@@ -9,17 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">DockerSelenium</th></tr>
-<tr><td><a href="#t0">GooglePageTest1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5,183</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">GoogleSearchTest2</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">25,472</td><td></td><td></td></tr>
-<tr><td><a href="#t2">GoogleSearchTest1</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">28,383</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">59,038</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">GoogleSearchTest2</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">25,927</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">GoogleSearchTest1</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">50,093</td><td></td><td></td></tr>
+<tr><td><a href="#t2">GooglePageTest1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">51,860</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">127,880</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DockerSelenium</th></tr></tbody><tbody id="t0"><tr><th colspan="4">GooglePageTest1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestSuite.GoogleHomeTest</td><td><a href="#m0">searchTest</a></td><td rowspan="1">1738853796931</td><td rowspan="1">43</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">GoogleSearchTest2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestSuite.GoogleResultTest</td><td><a href="#m1">searchPageTest</a></td><td rowspan="1">1738853795974</td><td rowspan="1">21334</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">GoogleSearchTest1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestSuite.GoogleResultTest</td><td><a href="#m2">searchPageTest</a></td><td rowspan="1">1738853797235</td><td rowspan="1">22911</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DockerSelenium</th></tr></tbody><tbody id="t0"><tr><th colspan="4">GoogleSearchTest2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestSuite.GoogleResultTest</td><td><a href="#m0">searchPageTest</a></td><td rowspan="1">1738945523504</td><td rowspan="1">22335</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">GoogleSearchTest1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestSuite.GoogleResultTest</td><td><a href="#m1">searchPageTest</a></td><td rowspan="1">1738945547542</td><td rowspan="1">22554</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">GooglePageTest1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestSuite.GoogleHomeTest</td><td><a href="#m2">searchTest</a></td><td rowspan="1">1738945571801</td><td rowspan="1">64</td></tr></tbody>
 </table>
-<h2>GooglePageTest1</h2><h3 id="m0">TestSuite.GoogleHomeTest#searchTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>GoogleSearchTest2</h2><h3 id="m1">TestSuite.GoogleResultTest#searchPageTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Selenium</td><td>2</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.linkText: News&apos; (tried for 10 second(s) with 500 milliseconds interval)
+<h2>GoogleSearchTest2</h2><h3 id="m0">TestSuite.GoogleResultTest#searchPageTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Selenium</td><td>2</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.linkText: News&apos; (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at page.object.GoogleResultPage.isDisplayed(GoogleResultPage.java:26)
@@ -35,9 +34,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.167.4-microsoft-standard-WSL2&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [d2940db2a6d5e479b3e9499bcd858bef, findElement {using=link text, value=News}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37589}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.6:4444/sessio..., se:cdpVersion: 132.0.6834.110, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.6:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.6:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d2940db2a6d5e479b3e9499bcd858bef
+Command: [f93b65dd6e3f06dab25b6962f75d2326, findElement {using=link text, value=News}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33087}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.4:4444/sessio..., se:cdpVersion: 132.0.6834.110, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f93b65dd6e3f06dab25b6962f75d2326
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -57,7 +56,7 @@ Session ID: d2940db2a6d5e479b3e9499bcd858bef
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 	... 24 more
 ... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>GoogleSearchTest1</h2><h3 id="m2">TestSuite.GoogleResultTest#searchPageTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Docker</td><td>3</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.linkText: News&apos; (tried for 10 second(s) with 500 milliseconds interval)
+<h2>GoogleSearchTest1</h2><h3 id="m1">TestSuite.GoogleResultTest#searchPageTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Docker</td><td>3</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.linkText: News&apos; (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at page.object.GoogleResultPage.isDisplayed(GoogleResultPage.java:26)
@@ -73,9 +72,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.167.4-microsoft-standard-WSL2&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [ed7e6b3674f73200a38b94e993ab5072, findElement {using=link text, value=News}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41239}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.4:4444/sessio..., se:cdpVersion: 132.0.6834.110, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed7e6b3674f73200a38b94e993ab5072
+Command: [105d4476a785ca70ff140babaed558bf, findElement {using=link text, value=News}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38707}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.4:4444/sessio..., se:cdpVersion: 132.0.6834.110, se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.18.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 105d4476a785ca70ff140babaed558bf
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -95,5 +94,6 @@ Session ID: ed7e6b3674f73200a38b94e993ab5072
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 	... 24 more
 ... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>GooglePageTest1</h2><h3 id="m2">TestSuite.GoogleHomeTest#searchTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -39,5 +39,6 @@ services:
     environment:
       - HUB_HOST=hub
       - BROWSER=chrome
+	  - MODULE=testng.xml
     volumes:
       - ./output:/app/test-output  # Ensure this directory exists

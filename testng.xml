@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DockerSelenium" verbose="1" parallel="tests">
+    <test name="GooglePageTest1">
+        <classes>
+            <class name="TestSuite.GoogleHomeTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest1">
+    <parameter name="keywords" value="Docker"></parameter>
+    <parameter name="index" value="3"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+    
+    <test name="GoogleSearchTest2">
+    <parameter name="keywords" value="Selenium"></parameter>
+     <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+</suite>

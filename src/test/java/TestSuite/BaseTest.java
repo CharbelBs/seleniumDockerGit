@@ -29,23 +29,38 @@ public class BaseTest {
     	
     	 String hubURL = "http://"+ host +":4444/wd/hub";
          String browser = System.getProperty("BROWSER");
-         if (browser.equals("firefox")) {
-             FirefoxOptions options = new FirefoxOptions();
-             this.driver = new RemoteWebDriver(new URL(hubURL), options);
-         } else {
-             ChromeOptions options = new ChromeOptions();          
-             this.driver = new RemoteWebDriver(new URL(hubURL), options);
+
+         if(browser == null) {
+
+             System.setProperty("webdriver.edge.driver", "C:/Drivers/msedgedriver.exe");
+             EdgeOptions options = new EdgeOptions();
+             options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+             options.addArguments("--disable-blink-features=AutomationControlled");
+             options.addArguments("--disable-popup-blocking");
+             options.addArguments("--start-maximized");
+
+             this.driver = new EdgeDriver(options);
          }
-/*
-        EdgeOptions options = new EdgeOptions();
-        options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
-        options.addArguments("--disable-blink-features=AutomationControlled"); 
-        options.addArguments("--disable-popup-blocking");
-        options.addArguments("--start-maximized");
 
+         else {
+             if (browser.equals("firefox")) {
+                 FirefoxOptions options = new FirefoxOptions();
+                 options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+                 options.addArguments("--disable-blink-features=AutomationControlled");
+                 options.addArguments("--disable-popup-blocking");
+                 options.addArguments("--start-maximized");
+                 this.driver = new RemoteWebDriver(new URL(hubURL), options);
+             } else {
+                 ChromeOptions options = new ChromeOptions();
+                 options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+                 options.addArguments("--disable-blink-features=AutomationControlled");
+                 options.addArguments("--disable-popup-blocking");
+                 options.addArguments("--start-maximized");
+                 this.driver = new RemoteWebDriver(new URL(hubURL), options);
+             }
 
-        driver = new EdgeDriver(options);
-        */
+         }
+
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10000));
         
         driver.get("https://www.google.com");

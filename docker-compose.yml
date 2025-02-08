@@ -1,4 +1,3 @@
-
 services:
 
   hub:
@@ -18,7 +17,7 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-    shm_size: "2g"  # Increases shared memory to avoid Chrome crashes
+    shm_size: "2g"
 
   firefox:
     image: selenium/node-firefox:latest
@@ -28,7 +27,7 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-    shm_size: "2g"  # Increases shared memory for Firefox
+    shm_size: "2g"
 
   search-module:
     image: charbelbsaibess/selenium-docker
@@ -38,6 +37,6 @@ services:
     environment:
       - HUB_HOST=hub
       - BROWSER=chrome
-      - MODULE=testng.xml  # FIXED: Changed tab to spaces here
+      - MODULE=testng.xml
     volumes:
-      - ./output:/app/test-output  # Ensure this directory exists
+      - ./docker-output:/app/test-output

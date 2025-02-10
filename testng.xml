@@ -23,7 +23,7 @@
         </classes>
     </test>
 
-    <test name="GoogleSearchTest2">
+    <test name="GoogleSearchTest3">
         <parameter name="keywords" value="Selenium"/>
         <parameter name="index" value="2"></parameter>
         <classes>
@@ -31,7 +31,7 @@
         </classes>
     </test>
 
-    <test name="GoogleSearchTest2">
+    <test name="GoogleSearchTest4">
         <parameter name="keywords" value="Selenium"/>
         <parameter name="index" value="2"></parameter>
         <classes>
@@ -39,7 +39,7 @@
         </classes>
     </test>
 
-    <test name="GoogleSearchTest2">
+    <test name="GoogleSearchTest5">
         <parameter name="keywords" value="Selenium"/>
         <parameter name="index" value="2"></parameter>
         <classes>
@@ -47,7 +47,7 @@
         </classes>
     </test>
 
-    <test name="GoogleSearchTest2">
+    <test name="GoogleSearchTest6">
         <parameter name="keywords" value="Selenium"/>
         <parameter name="index" value="2"></parameter>
         <classes>
@@ -55,7 +55,7 @@
         </classes>
     </test>
 
-    <test name="GoogleSearchTest2">
+    <test name="GoogleSearchTest7">
         <parameter name="keywords" value="Selenium"/>
         <parameter name="index" value="2"></parameter>
         <classes>
@@ -63,7 +63,7 @@
         </classes>
     </test>
 
-    <test name="GoogleSearchTest2">
+    <test name="GoogleSearchTest8">
         <parameter name="keywords" value="Selenium"/>
         <parameter name="index" value="2"></parameter>
         <classes>
@@ -71,7 +71,7 @@
         </classes>
     </test>
 
-    <test name="GoogleSearchTest2">
+    <test name="GoogleSearchTest9">
         <parameter name="keywords" value="Selenium"/>
         <parameter name="index" value="2"></parameter>
         <classes>

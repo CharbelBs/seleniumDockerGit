@@ -42,9 +42,9 @@ pipeline {
     post {
             always {
                 script {
-                    echo "Archiving test results..."
-                    archiveArtifacts artifacts: "docker-output/**", onlyIfSuccessful: false
-                }
+                            bat "rm -rf docker-output/*"
+                            archiveArtifacts artifacts: "docker-output/**", onlyIfSuccessful: false
+                        }
 
                 echo "Shutting down Selenium Grid..."
                 bat "docker-compose down --remove-orphans"

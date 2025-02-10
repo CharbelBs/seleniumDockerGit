@@ -46,10 +46,8 @@ pipeline {
                         }
 
                 echo "Shutting down Selenium Grid..."
-                bat "docker-compose down --remove-orphans"
-                bat "docker rmi charbelbsaibess/selenium-docker"
-                bat "docker volume prune -f"
-                bat "docker builder prune -f"
+                bat ""
+                bat "docker-compose down"
             }
 
             failure {

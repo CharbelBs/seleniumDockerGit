@@ -39,4 +39,4 @@ services:
       - BROWSER=chrome
       - MODULE=testng.xml
     volumes:
-      - ./output:/app/test-output
+      - ./test-output:/app/test-output

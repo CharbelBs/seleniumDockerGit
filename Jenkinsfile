@@ -42,7 +42,7 @@ pipeline {
     post {
             always {
                 script {
-                            archiveArtifacts artifacts: "output/**", onlyIfSuccessful: false
+                            archiveArtifacts artifacts: "test-output/**", onlyIfSuccessful: false
                         }
 
 

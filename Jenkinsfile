@@ -48,7 +48,7 @@ pipeline {
 
                 echo "Shutting down Selenium Grid..."
                 bat "docker system prune -f"
-                bat "docker system prune -a"
+                bat "docker system prune -a -f"
                 bat "docker-compose down"
             }
 

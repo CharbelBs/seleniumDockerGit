@@ -49,11 +49,6 @@ pipeline {
 
                 bat "docker-compose down"
 
-                echo "Fetching test execution logs..."
-                bat 'docker logs $(docker ps -lq)'
-
-                echo "Displaying test results..."
-                bat 'cat output.log'
             }
 
             failure {

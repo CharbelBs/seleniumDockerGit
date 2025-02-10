@@ -34,7 +34,7 @@ pipeline {
         */
         stage('Start Selenium Grid and run Tests') {
                    steps {
-                        bat 'docker-compose up -d --scale chrome=10'
+                        bat 'docker-compose up -d --scale chrome=20'
                     }
          }
     }

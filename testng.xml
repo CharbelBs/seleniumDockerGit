@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="DockerSelenium" verbose="1" parallel="tests" thread-count="10">
+<suite name="DockerSelenium" verbose="1" parallel="tests" thread-count="20">
     <test name="GooglePageTest1">
         <classes>
             <class name="TestSuite.GoogleHomeTest" />
@@ -72,6 +72,84 @@
     </test>
 
     <test name="GoogleSearchTest9">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GooglePageTest11">
+        <classes>
+            <class name="TestSuite.GoogleHomeTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest11">
+        <parameter name="keywords" value="Docker"></parameter>
+        <parameter name="index" value="3"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest12">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest13">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest14">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest15">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest16">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest17">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest18">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest19">
         <parameter name="keywords" value="Selenium"/>
         <parameter name="index" value="2"></parameter>
         <classes>

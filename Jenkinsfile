@@ -48,7 +48,7 @@ pipeline {
 
                 echo "Shutting down Selenium Grid..."
                 bat "docker-compose down --remove-orphans"
-                bat "docker rm test-module"
+                bat "docker rmi charbelbsaibess/selenium-docker"
             }
 
             failure {

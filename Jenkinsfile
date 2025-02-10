@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        /*stage('Push Image') {
+        stage('Push Image') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
                     bat "docker login --username=charbelbsaibess --password=#Qawserdf1234"
@@ -31,7 +31,7 @@ pipeline {
                         }
                     }
                 }
-        */
+
         stage('Start Selenium Grid and run Tests') {
                    steps {
                         bat 'docker-compose up -d --scale chrome=11'
@@ -47,8 +47,6 @@ pipeline {
 
 
                 echo "Shutting down Selenium Grid..."
-                bat "docker system prune -f"
-                bat "docker system prune -a -f"
                 bat "docker-compose down"
             }
 

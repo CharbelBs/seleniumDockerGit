@@ -34,7 +34,7 @@ pipeline {
 */
         stage('Start Selenium Grid and run Tests') {
                    steps {
-                        bat 'docker-compose up -d --scale chrome=11'
+                        bat 'docker-compose up -d --scale chrome=10'
                     }
          }
     }
@@ -44,7 +44,6 @@ pipeline {
                 script {
                             archiveArtifacts artifacts: "test-output/**", onlyIfSuccessful: false
                         }
-
 
                 echo "Shutting down Selenium Grid..."
                 bat "docker-compose down"

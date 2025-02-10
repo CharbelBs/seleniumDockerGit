@@ -22,4 +22,60 @@
             <class name="TestSuite.GoogleResultTest" />
         </classes>
     </test>
+
+    <test name="GoogleSearchTest2">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest2">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest2">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest2">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest2">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest2">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
+
+    <test name="GoogleSearchTest2">
+        <parameter name="keywords" value="Selenium"/>
+        <parameter name="index" value="2"></parameter>
+        <classes>
+            <class name="TestSuite.GoogleResultTest" />
+        </classes>
+    </test>
 </suite>

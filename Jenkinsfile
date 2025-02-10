@@ -43,6 +43,7 @@ pipeline {
             always {
                 script {
                             archiveArtifacts artifacts: "docker-output/**", onlyIfSuccessful: false
+                            archiveArtifacts artifacts: "test-output/**", onlyIfSuccessful: false
                         }
 
                 echo "Shutting down Selenium Grid..."

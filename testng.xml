@@ -8,11 +8,6 @@
         </classes>
     </test>
 
-    <test name="GooglePageTest2">
-        <classes>
-            <class name="TestSuite.GoogleHomeTest" />
-        </classes>
-    </test>
 
     <test name="GoogleSearchTest1">
         <parameter name="keywords" value="Docker"></parameter>

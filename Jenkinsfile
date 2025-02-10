@@ -34,7 +34,7 @@ pipeline {
 */
         stage('Start Selenium Grid and run Tests') {
                    steps {
-                        bat 'docker-compose up -d --scale chrome=6'
+                        bat 'docker-compose up --scale chrome=6'
                     }
          }
     }
@@ -46,7 +46,14 @@ pipeline {
                         }
 
                 echo "Shutting down Selenium Grid..."
+
                 bat "docker-compose down"
+
+                echo "Fetching test execution logs..."
+                bat 'docker logs $(docker ps -lq)'
+
+                echo "Displaying test results..."
+                bat 'cat output.log'
             }
 
             failure {

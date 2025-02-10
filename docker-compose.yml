@@ -39,4 +39,4 @@ services:
       - BROWSER=chrome
       - MODULE=testng.xml
     volumes:
-      - ./docker-output:/app/test-output
+      - ./docker-output/*:/app/test-output/*

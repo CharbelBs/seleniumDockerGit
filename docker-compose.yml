@@ -39,4 +39,4 @@ services:
       - BROWSER=chrome
       - MODULE=testng.xml
     volumes:
-      - ./test-output:/app/test-output
+      - C:/Users/Charbil/eclipse-workspace/jenkins_slave/workspace/selenium-docker-builder-executer/test-output:/app/test-output

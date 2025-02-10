@@ -14,7 +14,7 @@ pipeline {
                 bat 'docker build -t charbelbsaibess/selenium-docker .'
             }
         }
-
+/*
         stage('Push Image') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
@@ -31,7 +31,7 @@ pipeline {
                         }
                     }
                 }
-
+*/
         stage('Start Selenium Grid and run Tests') {
                    steps {
                         bat 'docker-compose up -d --scale chrome=11'

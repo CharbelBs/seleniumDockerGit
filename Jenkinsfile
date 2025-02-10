@@ -42,7 +42,6 @@ pipeline {
     post {
             always {
                 script {
-                            archiveArtifacts artifacts: "docker-output/**", onlyIfSuccessful: false
                             archiveArtifacts artifacts: "test-output/**", onlyIfSuccessful: false
                         }
 

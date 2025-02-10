@@ -42,7 +42,6 @@ pipeline {
     post {
             always {
                 script {
-                            bat "rm -rf docker-output/*"
                             archiveArtifacts artifacts: "docker-output/**", onlyIfSuccessful: false
                         }
 

@@ -8,13 +8,7 @@
         </classes>
     </test>
 
-    <test name="GooglePageTest2">
-        <classes>
-            <class name="TestSuite.GoogleHomeTest" />
-        </classes>
-    </test>
-
-    <test name="GoogleSearchTest1">
+    <test name="GoogleResultTest">
         <parameter name="keywords" value="Docker"></parameter>
         <parameter name="index" value="3"></parameter>
         <classes>
@@ -22,27 +16,10 @@
         </classes>
     </test>
 
-    <test name="GoogleSearchTest2">
-        <parameter name="keywords" value="Selenium"/>
-        <parameter name="index" value="2"></parameter>
-        <classes>
-            <class name="TestSuite.GoogleResultTest" />
-        </classes>
-    </test>
 
-    <test name="GoogleSearchTest3">
-        <parameter name="keywords" value="Selenium"/>
-        <parameter name="index" value="2"></parameter>
+    <test name="APITests">
         <classes>
-            <class name="TestSuite.GoogleResultTest" />
-        </classes>
-    </test>
-
-    <test name="GoogleSearchTest4">
-        <parameter name="keywords" value="Selenium"/>
-        <parameter name="index" value="2"></parameter>
-        <classes>
-            <class name="TestSuite.GoogleResultTest" />
+            <class name="APITests.HTTPRequets" />
         </classes>
     </test>
 
